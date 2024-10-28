@@ -19,7 +19,7 @@
     if(is_dir($page))
         include $page.'/index.php';
     else
-        include $page.'.php';
+        include $page.'.php'; 
 
     }
 ?>
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="modal fade" id="uni_modal_right" role='dialog'>
-    <div class="modal-dialog  rounded-0 modal-full-height  modal-md" role="document">
+  <div class="modal-dialog  rounded-0 modal-full-height  modal-md" role="document">
       <div class="modal-content rounded-0">
         <div class="modal-header">
         <h5 class="modal-title"></h5>

@@ -15,8 +15,8 @@
             <div class="card rounded-0">
                 <div class="card-body">
                     <form id="quote-form">
-                        <input type="hidden" name="id" value="">
-                        <div class="row">
+                    <input type="hidden" name="id" value="">
+                    <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <label for="fullname" class="control-label">Fullname <small class="text-danger">*</small></label>
