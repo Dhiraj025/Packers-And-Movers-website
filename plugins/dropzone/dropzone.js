@@ -163,92 +163,44 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
 
       this.prototype.events = ["drop", "dragstart", "dragend", "dragenter", "dragover", "dragleave", "addedfile", "addedfiles", "removedfile", "thumbnail", "error", "errormultiple", "processing", "processingmultiple", "uploadprogress", "totaluploadprogress", "sending", "sendingmultiple", "success", "successmultiple", "canceled", "canceledmultiple", "complete", "completemultiple", "reset", "maxfilesexceeded", "maxfilesreached", "queuecomplete"];
       this.prototype.defaultOptions = {
-        /**
-         * Has to be specified on elements other than form (or when the form
-         * doesn't have an `action` attribute). You can also
-         * provide a function that will be called with `files` and
-         * must return the url (since `v3.12.0`)
-         */
+        
         url: null,
 
-        /**
-         * Can be changed to `"put"` if necessary. You can also provide a function
-         * that will be called with `files` and must return the method (since `v3.12.0`).
-         */
+        
         method: "post",
 
-        /**
-         * Will be set on the XHRequest.
-         */
+        
         withCredentials: false,
 
-        /**
-         * The timeout for the XHR requests in milliseconds (since `v4.4.0`).
-         */
+       
         timeout: 30000,
 
-        /**
-         * How many file uploads to process in parallel (See the
-         * Enqueuing file uploads documentation section for more info)
-         */
+       
         parallelUploads: 2,
 
-        /**
-         * Whether to send multiple files in one request. If
-         * this it set to true, then the fallback file input element will
-         * have the `multiple` attribute as well. This option will
-         * also trigger additional events (like `processingmultiple`). See the events
-         * documentation section for more information.
-         */
+        
         uploadMultiple: false,
 
-        /**
-         * Whether you want files to be uploaded in chunks to your server. This can't be
-         * used in combination with `uploadMultiple`.
-         *
-         * See [chunksUploaded](#config-chunksUploaded) for the callback to finalise an upload.
-         */
+       
         chunking: false,
 
-        /**
-         * If `chunking` is enabled, this defines whether **every** file should be chunked,
-         * even if the file size is below chunkSize. This means, that the additional chunk
-         * form data will be submitted and the `chunksUploaded` callback will be invoked.
-         */
         forceChunking: false,
 
-        /**
-         * If `chunking` is `true`, then this defines the chunk size in bytes.
-         */
+        
         chunkSize: 2000000,
 
-        /**
-         * If `true`, the individual chunks of a file are being uploaded simultaneously.
-         */
+        
         parallelChunkUploads: false,
 
-        /**
-         * Whether a chunk should be retried if it fails.
-         */
         retryChunks: false,
 
-        /**
-         * If `retryChunks` is true, how many times should it be retried.
-         */
+        
         retryChunksLimit: 3,
 
-        /**
-         * If not `null` defines how many files this Dropzone handles. If it exceeds,
-         * the event `maxfilesexceeded` will be called. The dropzone element gets the
-         * class `dz-max-files-reached` accordingly so you can provide visual feedback.
-         */
+        
         maxFilesize: 256,
 
-        /**
-         * The name of the file param that gets transferred.
-         * **NOTE**: If you have the option  `uploadMultiple` set to `true`, then
-         * Dropzone will append `[]` to the name.
-         */
+        
         paramName: "file",
 
         /**
@@ -256,9 +208,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
          */
         createImageThumbnails: true,
 
-        /**
-         * In MB. When the filename exceeds this limit, the thumbnail will not be generated.
-         */
+        
         maxThumbnailFilesize: 10,
 
         /**
