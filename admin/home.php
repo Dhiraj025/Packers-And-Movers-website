@@ -39,7 +39,7 @@
   <!-- /.col -->
   <div class="col-12 col-sm-4 col-md-4">
     <div class="info-box">
-      <span class="info-box-icon bg-gradient-dark elevation-1"><i class="fas fa-info-circle"></i></span>
+    <span class="info-box-icon bg-gradient-dark elevation-1"><i class="fas fa-info-circle"></i></span>
       <div class="info-box-content">
         <span class="info-box-text">Inquiries</span>
         <span class="info-box-number text-right h5">
@@ -57,7 +57,7 @@
   <!-- /.col -->
 </div>
 <div class="container">
-  <?php 
+<?php 
     $files = array();
       $fopen = scandir(base_app.'uploads/banner');
       foreach($fopen as $fname){

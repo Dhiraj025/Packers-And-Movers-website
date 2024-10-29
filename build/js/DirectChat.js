@@ -1,17 +1,5 @@
-/**
- * --------------------------------------------
- * AdminLTE DirectChat.js
- * License MIT
- * --------------------------------------------
- */
 
 import $ from 'jquery'
-
-/**
- * Constants
- * ====================================================
- */
-
 const NAME = 'DirectChat'
 const DATA_KEY = 'lte.directchat'
 const EVENT_KEY = `.${DATA_KEY}`
